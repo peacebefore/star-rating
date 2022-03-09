@@ -1,0 +1,13 @@
+{
+  "files.autoSave": "onFocusChange",
+  "editor.wordWrap": "on",
+  "editor.autoClosingBrackets": "always",
+  "editor.autoClosingOvertype": "never",
+  "editor.autoClosingQuotes": "always",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.guides.bracketPairs": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "diffEditor.wordWrap": "on"
+}
