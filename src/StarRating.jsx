@@ -1,10 +1,7 @@
-import React, { useState } from "react";
-import { FaStar } from "react-icons/fa";
+import React from "react";
+import { ReactComponent as Star } from "./images/star.svg";
 
-const StarRating = () => {
-  const [rating, setRating] = useState(null);
-  const [hover, setHover] = useState(null);
-
+const StarRating = ({ rating, setRating }) => {
   return (
     <div role="group">
       <div id="rating-field" className="star-ratings">
@@ -17,15 +14,14 @@ const StarRating = () => {
                 type="radio"
                 key={ratingValue}
                 name={"${ratingValue}-stars"}
-                value={ratingValue}
-                onChange={() => setRating(ratingValue)}
+                value={rating}
+                color="grayStar"
+                onChange={() => {
+                  setRating(ratingValue);
+                }}
               />
-              <FaStar
-                className="star"
-                size="auto"
-                color={ratingValue <= (hover || rating) ? "#0D9488" : "#e4e5e9"}
-                onMouseEnter={() => setHover(ratingValue)}
-                onMouseLeave={() => setHover(null)}
+              <Star
+                style={{ color: ratingValue <= rating ? "#0D9488" : "#e4e5e9" }}
               />
             </label>
           );

@@ -9,14 +9,19 @@ input[type="radio"] {
   display: none;
 }
 
-.star {
+.star-ratings {
+  max-width: 250px;
   cursor: pointer;
-  transition: color 200ms;
+}
+
+.grayStar {
+  background-image: url(./images/star.svg);
   max-width: 50px;
 }
 
-.star-ratings {
-  max-width: 250px;
+.greenStar {
+  background-image: url(./images/filled-star.svg);
+  max-width: 50px;
 }
 
 /*
